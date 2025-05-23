@@ -16,11 +16,14 @@ const RootLayout = () => {
           headerTintColor: theme.title,
         }}
       >
-        <Stack.Screen name="(auth)" options={{ headerShown: false }} />
         <Stack.Screen name="index" options={{ title: "Home" }} />
+        <Stack.Screen name="(auth)" options={{ headerShown: false }} />
+        <Stack.Screen name="(dashboard)" options={{ headerShown: false }} />
       </Stack>
     </>
   );
 };
 
 export default RootLayout;
+//Sprawdzić dlaczego nie działa login i register
+//https://www.youtube.com/watch?v=zEbaeod2QjM&list=PL4cUxeGkcC9hNTz3sxqGTfxAwU-DIHJd2&index=9&ab_channel=NetNinja 5:00

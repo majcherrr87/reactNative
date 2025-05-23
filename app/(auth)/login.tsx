@@ -1,7 +1,7 @@
 import { Pressable, StyleSheet, Text, View } from "react-native";
 import ThemedView from "../../components/ThemedView";
 import ThemedText from "../../components/ThemedText";
-import Spracer from "../../components/Spacer";
+import Spacer from "../../components/Spacer";
 import { Link } from "expo-router";
 import { Colors } from "../../constants/Colors";
 import ThemedButton from "../../components/ThemedButton";
@@ -14,7 +14,7 @@ const Login = () => {
 
   return (
     <ThemedView style={styles.container}>
-      <Spracer />
+      <Spacer />
       <ThemedText title={true} style={styles.title}>
         Login to Your Account
       </ThemedText>
@@ -23,11 +23,15 @@ const Login = () => {
         <Text style={{ color: "#f2f2f2" }}>Login</Text>
       </ThemedButton>
 
-      <Spracer />
+      <Spacer />
       <Link href="/register">
         <ThemedText style={{ textAlign: "center" }}>
           Registed instead
         </ThemedText>
+      </Link>
+      <Spacer />
+      <Link href="/">
+        <ThemedText style={{ textAlign: "center" }}>Home</ThemedText>
       </Link>
     </ThemedView>
   );
@@ -42,12 +46,4 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   title: { textAlign: "center", fontSize: 18, marginBottom: 20 },
-  btn: {
-    backgroundColor: Colors.primary,
-    padding: 15,
-    borderRadius: 5,
-  },
-  pressed: {
-    opacity: 0.8,
-  },
 });

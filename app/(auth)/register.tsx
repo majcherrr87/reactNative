@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View } from "react-native";
 import ThemedView from "../../components/ThemedView";
 import ThemedText from "../../components/ThemedText";
-import Spracer from "../../components/Spacer";
+import Spacer from "../../components/Spacer";
 import { Link } from "expo-router";
 import ThemedButton from "../../components/ThemedButton";
 
@@ -12,7 +12,7 @@ const Register = () => {
   };
   return (
     <ThemedView style={styles.container}>
-      <Spracer />
+      <Spacer />
       <ThemedText title={true} style={styles.title}>
         Register form an Account
       </ThemedText>
@@ -21,7 +21,7 @@ const Register = () => {
         <Text style={{ color: "#f2f2f2" }}>Register</Text>
       </ThemedButton>
 
-      <Spracer />
+      <Spacer />
       <Link href="/login">
         <ThemedText style={{ textAlign: "center" }}>Login instead</ThemedText>
       </Link>
