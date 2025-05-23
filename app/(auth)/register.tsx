@@ -3,14 +3,23 @@ import ThemedView from "../../components/ThemedView";
 import ThemedText from "../../components/ThemedText";
 import Spracer from "../../components/Spacer";
 import { Link } from "expo-router";
+import ThemedButton from "../../components/ThemedButton";
 
 const Register = () => {
+  const handleSubmit = () => {
+    // Handle login logic here
+    console.log("register button pressed");
+  };
   return (
     <ThemedView style={styles.container}>
       <Spracer />
       <ThemedText title={true} style={styles.title}>
         Register form an Account
       </ThemedText>
+
+      <ThemedButton onPress={handleSubmit}>
+        <Text style={{ color: "#f2f2f2" }}>Register</Text>
+      </ThemedButton>
 
       <Spracer />
       <Link href="/login">
@@ -26,6 +35,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: "center",
+    alignItems: "center",
   },
   title: { textAlign: "center", fontSize: 18, marginBottom: 20 },
 });
