@@ -1,9 +1,9 @@
-import { Text, useColorScheme } from "react-native";
-import { StyleProp, ViewStyle } from "react-native";
+import { Text, TextStyle, useColorScheme } from "react-native";
+import { StyleProp } from "react-native";
 import { Colors } from "../constants/Colors";
 
 type ThemedTextProps = {
-  style?: StyleProp<ViewStyle>;
+  style?: StyleProp<TextStyle>;
   children?: React.ReactNode;
   title?: boolean;
 };
