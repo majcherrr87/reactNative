@@ -8,7 +8,6 @@ import ThemedButton from "../../components/ThemedButton";
 
 const Login = () => {
   const handleSubmit = () => {
-    // Handle login logic here
     console.log("Login button pressed");
   };
 
